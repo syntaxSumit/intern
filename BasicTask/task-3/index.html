@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interactive Webpage</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<h1>Interactive Elements Demo</h1>
+<div class="dropdown">
+<button class="dropdown-btn" id="dropdownBtn">Select Option ▼</button>
+<div class="dropdown-content" id="dropdownContent">
+<a href="#" data-value="option1">Option 1</a>
+<a href="#" data-value="option2">Option 2</a>
+<a href="#" data-value="option3">Option 3</a>
+</div>
+</div>
+<div class="modal-trigger">
+<button id="modalBtn" class="btn">Open Modal</button>
+</div>
+<div id="modal" class="modal">
+<div class="modal-content">
+<span class="close">&times;</span>
+<h2>Modal Dialog</h2>
+<p>This is a modal with form validation</p>
+</div>
+</div>
+<div class="form-section">
+<h2>Registration Form</h2>
+<form id="registrationForm">
+<div class="form-group">
+<label>Name:</label>
+<input type="text" id="name" name="name" required>
+<span class="error" id="nameError"></span>
+</div>
+<div class="form-group">
+<label>Email:</label>
+<input type="email" id="email" name="email" required>
+<span class="error" id="emailError"></span>
+</div>
+<div class="form-group">
+<label>Password:</label>
+<input type="password" id="password" name="password" required>
+<span class="error" id="passwordError"></span>
+</div>
+<div class="form-group">
+<label>Age:</label>
+<input type="number" id="age" name="age" required>
+<span class="error" id="ageError"></span>
+</div>
+<button type="submit" class="btn">Submit</button>
+</form>
+<div id="successMessage" class="success"></div>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
